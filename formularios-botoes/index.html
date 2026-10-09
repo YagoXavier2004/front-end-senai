@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de inscrições de workshop</title>
+</head>
+<body>
+    <main>
+
+        <section id="inscricao">
+
+            <h2>Formulario de Inscricao de workshop</h2>
+            <p>Preencha os dados abaixo:</p>
+            <form action="#" method="post">
+                <fieldset>
+
+                    <legend><b>1 - Informações Pessoais</b></legend>
+
+                    <label for="campo-nome">Nome completo:</label><br>
+                    <input type="text"
+                    name="nome_completo" 
+                    id="campo-nome"
+                    placeholder="informe seu nome" 
+                    required
+                    size="40">
+
+                    <br>
+
+
+                    <label for="campo-email">Email:</label><br>
+                    <input type="email"
+                    name="email_pessoal" 
+                    id="campo-email"
+                    placeholder="informe seu email" 
+                    required
+                    size="40">
+
+                    <br>
+
+
+                    <label for="campo-Telefone">Telefone:</label><br>
+                    <input type="tel"
+                    name="Telefone-pessoal" 
+                    id="campo-telefone"
+                    placeholder="informe seu telefone" 
+                    required
+                    size="11">
+
+
+                    <br>
+
+
+                    <label for="campo-data-de-nascimento">Data de Nascimento:</label><br>
+                    <input type="date"
+                    name="data_de_nascimento"
+                    id="campo-data-de-nascimento"
+                    required>
+                </fieldset>
+
+                    <br>
+
+                <fieldset>
+                    <legend><b>2 - Preferencias do Workshop</b></legend>
+
+                    <label for="campo-curso"> Selecione o workshop: desejado: </label>
+                    <select name="selecao_cursos"
+                    id="Campo-curso"
+                    required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Front">Front-end</option>
+                    <option value="Back">Back-end</option>
+                    <option value="Mobile">Desenvolvimento Mobile</option>
+                </select>
+
+                    <br>
+                    
+                    <p><b>Selecione o turno do Workshop:</b></p>
+
+                    <input type="radio"
+                    name="turno_escollhido"
+                    id="campo-turno-manha"
+                    value="manha"
+                    checked
+                    >
+                    <label for="campo-turno-manha">Turno da manhã</label>
+
+                    <input type="radio"
+                    name="turno_escollhido"
+                    id="campo-turno-tarde"
+                    value="tarde"
+                    >
+                    <label for="campo-turno-tarde">Turno da tarde</label>
+
+                    <input type="radio"
+                    name="turno_escollhido"
+                    id="campo-turno-noite"
+                    value="noite"
+                    >
+                    <label for="campo-turno-noite">Turno da noite</label>
+
+
+
+                    <br>
+
+                    <p><b>Tópicos de interesse:</b></p>
+                    <input type="checkbox"
+                    name="topicos_interesse[]"
+                    id="campo-topico-html"
+                    value="html"
+                    >
+                    <label for="campo-topico-html">HTML</label>
+
+                    <input type="checkbox"
+                    name="topicos_interesse[]"
+                    id="campo-topico-css"
+                    value="css"
+                    >
+                    <label for="campo-topico-css">CSS</label>
+
+                    <input type="checkbox"
+                    name="topicos_interesse[]"
+                    id="campo-topico-javascript"
+                    value="javascript"
+                    >
+                    <label for="campo-topico-javascript">JavaScript</label>
+
+
+                    <br>
+
+                    <label for="campo-observacoes">Observações ou Duvidas:</label>
+                    <br>
+                    <textarea name="observacoes_adcionais"
+                    id="campo-observacoes"
+                    rows="4"
+                    cols="50"
+                    placeholder="Digite suas observações ou dúvidas aqui..."
+                    ></textarea>
+
+                    <br>
+
+                    
+                </fieldset>
+                <button type="submit">Enviar formulario</button>
+                <button type="reset">Limpar formulario</button>
+
+
+
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
