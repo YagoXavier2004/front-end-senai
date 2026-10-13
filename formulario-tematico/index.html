@@ -73,7 +73,7 @@
                 <b>Valor de condomínio:</b> R$ 500,00<br>
                 <b>Valor de iptu:</b> R$ 300,00<br>
             </p>
-            <a href="#contato">Entrar em contato com um corretor</a>
+            <a href="#Contatos">Entrar em contato com um corretor</a>
 
 
             <h2>Apartamento no condominio 'Caminho das flores</h2>
@@ -93,7 +93,7 @@
                 <b>Valor de iptu:</b> R$ 200,00<br>
             </p>
 
-            <a href="#contato">Entrar em contato com um corretor</a>
+            <a href="#Contatos">Entrar em contato com um corretor</a>
             <hr>
 
 
@@ -111,7 +111,71 @@
 </section>
 
                 <hr>
+                 <section id="Contatos">
+                   
+
+            <h2>Formulario de contato</h2>
+            <p>Preencha os dados abaixo:</p>
+            <form action="#" method="post">
+                <fieldset>
+
+                    <legend><b>1 - Informações Pessoais</b></legend>
+
+                    <label for="campo-nome">Nome completo:</label><br>
+                    <input type="text"
+                    name="nome_completo" 
+                    id="campo-nome"
+                    placeholder="informe seu nome" 
+                    required
+                    size="40">
+
+                    <br>
+
+
+                    <label for="campo-email">Email:</label><br>
+                    <input type="email"
+                    name="email_pessoal" 
+                    id="campo-email"
+                    placeholder="informe seu email" 
+                    required
+                    size="40">
+
+                    <br>
+
+
+                    <label for="campo-Telefone">Telefone:</label><br>
+                    <input type="tel"
+                    name="Telefone-pessoal" 
+                    id="campo-telefone"
+                    placeholder="informe seu telefone" 
+                    required
+                    size="11">
+
+
+                    <br>
+
+
+                    <br>
+
+                <fieldset>
+                    <legend><b>2 - Tipo de Contato</b></legend>
+
+                    <label for="campo-tipo-contato"> Selecione o motivo do contato: </label>
+                    <select name="selecao_tipo_contato"
+                    id="Campo-tipo-contato"
+                    required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Aluguel">Alugar o imovel</option>
+                    <option value="Venda">comprar o imovel</option>
+                </select>
+
+                    <br>
+                    
                  
+                    
+                </fieldset>
+                <button type="submit">Enviar formulario</button>
+                <button type="reset">Limpar formulario</button>
 
 
 
