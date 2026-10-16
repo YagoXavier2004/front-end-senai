@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+     <main>
+
+        <section id="inscricao">
+
+            <h2>Pré cadastro da Flash Link</h2>
+            <p>Preencha os dados abaixo:</p>
+            <form action="#" method="post">
+                <fieldset>
+
+                    <legend><b>1 - Informações Pessoais</b></legend>
+
+                    <label for="campo-nome">Nome completo:</label><br>
+                    <input type="text"
+                    name="nome_completo" 
+                    id="campo-nome"
+                    placeholder="informe seu nome" 
+                    required
+                    size="40">
+
+                    <br>
+
+
+                    <label for="campo-email">Email:</label><br>
+                    <input type="email"
+                    name="email_pessoal" 
+                    id="campo-email"
+                    placeholder="informe seu email" 
+                    required
+                    size="40">
+
+                    <br>
+
+
+                    <label for="campo-Telefone">Telefone:</label><br>
+                    <input type="tel"
+                    name="Telefone-pessoal" 
+                    id="campo-telefone"
+                    placeholder="informe seu telefone" 
+                    required
+                    size="11">
+
+
+                    <br>
+
+
+                    <label for="campo-data-de-nascimento">Data de Nascimento:</label><br>
+                    <input type="date"
+                    name="data_de_nascimento"
+                    id="campo-data-de-nascimento"
+                    required>
+                </fieldset>
+
+                    <br>
+
+                <fieldset>
+                    <legend><b>2 - Selecione o plano</b></legend>
+
+                    <label for="campo-plano"> Selecione o plano desejado: </label>
+                    <select name="selecao_plano"
+                    id="Campo-plano"
+                    required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="basico">Basico</option>
+                    <option value="avancado">Avançado</option>
+                    <option value="gamer">Gamer</option>
+                </select>
+
+                    <br>
+                    
+                    <p><b></b></p>
+
+                    <input type="radio"
+                    name="cabo-opcao"
+                    id="cabo-sim"
+                    value="sim"
+                    checked
+                    >
+                    <label for="cabo-sim">Preciso de cabo de rede</label>
+
+                    <input type="radio"
+                    name="cabo-opcao"
+                    id="cabo-nao"
+                    value="nao"
+                    >
+                    <label for="cabo-nao">Não preciso de cabo de rede</label>
+
+                    
+
+
+                    <br>
+
+                    <p><b>Voce tem esses eletronicos ?</b></p>
+                    <input type="checkbox"
+                    name="eletronicos[]"
+                    id="celular"
+                    value="celular"
+                    >
+                    <label for="celular">Celular</label>
+
+                    <input type="checkbox"
+                    name="eletronicos[]"
+                    id="computador"
+                    value="computador"
+                    >
+                    <label for="computador">Computador</label>
+
+                    <input type="checkbox"
+                    name="eletronicos[]"
+                    id="televisao"
+                    value="televisao"
+                    >
+                    <label for="televisao">Televisão</label>
+
+
+                    <br>
+
+                    <label for="campo-observacoes">Observações ou Duvidas:</label>
+                    <br>
+                    <textarea name="observacoes_adcionais"
+                    id="campo-observacoes"
+                    rows="4"
+                    cols="50"
+                    placeholder="Digite suas observações ou dúvidas aqui..."
+                    ></textarea>
+
+                    <br>
+
+                    
+                </fieldset>
+                <button type="submit">Enviar formulario</button>
+                <button type="reset">Limpar formulario</button>
+
+
+
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
